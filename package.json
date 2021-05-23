@@ -4,6 +4,7 @@
   "description": "A tool helps to generate basic datav configs snippets.",
   "version": "0.0.1",
   "license": "MIT",
+  "publisher": "Orchard",
   "icon": "./assets/images/logo.png",
   "engines": {
     "vscode": "^1.56.0"
