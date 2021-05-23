@@ -5,6 +5,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "publisher": "Orchard",
+  "repository": "https://github.com/jgyyz/datav-config-snippets",
   "icon": "./assets/images/logo.png",
   "engines": {
     "vscode": "^1.56.0"
