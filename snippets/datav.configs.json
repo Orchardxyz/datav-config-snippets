@@ -1,0 +1,490 @@
+{
+  "dvtext": {
+    "prefix": "dvtext",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"text\"",
+      "}"
+    ],
+    "description": "datav-text-input"
+  },
+  "dvnumber(NOT RECOMMEND)": {
+    "prefix": "dvnumber",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"number\",",
+      "  \"range\": [0, 100]",
+      "}"
+    ],
+    "description": "datav-number-input(suggest using `stepper` or `slider`.)"
+  },
+  "dvselect": {
+    "prefix": "dvselect",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"select\",",
+      "  \"filterable\": true,",
+      "  \"allowCustom\": true,",
+      "  \"useFont\": false,",
+      "  \"options\": [",
+      "    {",
+      "      \"value\": \"${value1}\",",
+      "      \"label\": \"${lebel1}\"",
+      "    },",
+      "    {",
+      "      \"value\": \"${value2}\",",
+      "      \"label\": \"${lebel2}\"",
+      "    },",
+      "    {",
+      "      \"value\": \"${value3}\",",
+      "      \"label\": \"${lebel3}\"",
+      "    }",
+      "  ]",
+      "}"
+    ],
+    "description": "datav-select"
+  },
+  "dvsearch(NOT RECOMMEND)": {
+    "prefix": "dvsearch",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"search\",",
+      "  \"range\": [",
+      "    {",
+      "      \"${label1}\": \"${value1}\"",
+      "    },",
+      "    {",
+      "      \"${label2}\": \"${value2}\"",
+      "    },",
+      "    \"${value3}\",",
+      "    \"${value4}\"",
+      "  ]",
+      "}"
+    ],
+    "description": "datav-search-select(suggest using `select`.)"
+  },
+  "dvcolor(NOT RECOMMEND)": {
+    "prefix": "dvcolor",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"color\"",
+      "}"
+    ],
+    "description": "datav-color-picker(suggest using `fill`.)"
+  },
+  "dvmulticolor": {
+    "prefix": "dvmulticolor",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"multicolor\",",
+      "  \"default\": {",
+      "    \"style\": \"double\",",
+      "    \"from\": \"${from}\",",
+      "    \"to\": \"${to}\",",
+      "    \"angle\": 0",
+      "  }",
+      "}"
+    ],
+    "description": "datav-gradirent-color-picker"
+  },
+  "dvarray(NOT RECOMMEND)": {
+    "prefix": "dvarray",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"array\",",
+      "  \"child\": {",
+      "    \"name\": \"item<%=i+1%>\",",
+      "    \"type\": \"object\",",
+      "    \"child\": {}",
+      "  }",
+      "}"
+    ],
+    "description": "datav-array(suggest using `tabs`.)"
+  },
+  "dvhidden": {
+    "prefix": "dvhidden",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"hidden\"",
+      "}"
+    ],
+    "description": "datav-hidden"
+  },
+  "dvboolean(NOT RECOMMEND)": {
+    "prefix": "dvboolean",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"boolean\"",
+      "}"
+    ],
+    "description": "datav-boolean(suggest using `switch`.)"
+  },
+  "dvradio": {
+    "prefix": "dvradio",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"radio\",",
+      "  \"optionCol\": 10,",
+      "  \"options\": [",
+      "    {",
+      "      \"value\": \"${value1}\",",
+      "      \"label\": \"${lebel1}\"",
+      "    },",
+      "    {",
+      "      \"value\": \"${value2}\",",
+      "      \"label\": \"${lebel2}\"",
+      "    },",
+      "    {",
+      "      \"value\": \"${value3}\",",
+      "      \"label\": \"${lebel3}\"",
+      "    }",
+      "  ]",
+      "}"
+    ],
+    "description": "datav-radio"
+  },
+  "dvcheckbox": {
+    "prefix": "dvcheckbox",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"checkbox\",",
+      "  \"optionCol\": 10,",
+      "  \"options\": [",
+      "    {",
+      "      \"value\": \"${value1}\",",
+      "      \"label\": \"${lebel1}\"",
+      "    },",
+      "    {",
+      "      \"value\": \"${value2}\",",
+      "      \"label\": \"${lebel2}\"",
+      "    },",
+      "    {",
+      "      \"value\": \"${value3}\",",
+      "      \"label\": \"${lebel3}\"",
+      "    }",
+      "  ]",
+      "}"
+    ],
+    "description": "datav-checkbox"
+  },
+  "dvbuttonRadio": {
+    "prefix": "dvbuttonRadio",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"buttonRadio\",",
+      "  \"evenlySplit\": true,",
+      "  \"options\": [",
+      "    {",
+      "      \"value\": \"${value1}\",",
+      "      \"label\": \"${lebel1}\"",
+      "    },",
+      "    {",
+      "      \"value\": \"${value2}\",",
+      "      \"label\": \"${lebel2}\"",
+      "    },",
+      "    {",
+      "      \"value\": \"${value3}\",",
+      "      \"label\": \"${lebel3}\"",
+      "    }",
+      "  ]",
+      "}"
+    ],
+    "description": "datav-button-radio"
+  },
+  "dviconRadio": {
+    "prefix": "dviconRadio",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"iconRadio\",",
+      "  \"evenlySplit\": true,",
+      "  \"options\": [",
+      "    {",
+      "      \"value\": \"${value1}\",",
+      "      \"label\": \"${lebel1}\",",
+      "      \"src\": \"${iconSrc1}\"",
+      "    },",
+      "    {",
+      "      \"value\": \"${value2}\",",
+      "      \"label\": \"${lebel2}\",",
+      "      \"src\": \"${iconSrc2}\"",
+      "    },",
+      "    {",
+      "      \"value\": \"${value3}\",",
+      "      \"label\": \"${lebel3}\",",
+      "      \"src\": \"${iconSrc3}\"",
+      "    }",
+      "  ]",
+      "}"
+    ],
+    "description": "datav-icon-radio"
+  },
+  "dvpercent(NOT RECOMMEND)": {
+    "prefix": "dvpercent",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"percent\"",
+      "}"
+    ],
+    "description": "datav-percent(suggest using `slider`.)"
+  },
+  "dvimage": {
+    "prefix": "dvimage",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"image\"",
+      "}"
+    ],
+    "description": "datav-image"
+  },
+  "dvimageSelect": {
+    "prefix": "dvimageSelect",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"imageSelect\",",
+      "  \"options\": [",
+      "    {",
+      "      \"value\": \"${value1}\",",
+      "      \"label\": \"${lebel1}\",",
+      "      \"src\": \"${imgSrc1}\"",
+      "    },",
+      "    {",
+      "      \"value\": \"${value2}\",",
+      "      \"label\": \"${lebel2}\",",
+      "      \"src\": \"${imgSrc2}\"",
+      "    },",
+      "    {",
+      "      \"value\": \"${value3}\",",
+      "      \"label\": \"${lebel3}\",",
+      "      \"src\": \"${imgSrc3}\"",
+      "    }",
+      "  ]",
+      "}"
+    ],
+    "description": "datav-image-select"
+  },
+  "dvswitch": {
+    "prefix": "dvswitch",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"switch\",",
+      "  \"statusText\": true",
+      "}"
+    ],
+    "description": "datav-switch"
+  },
+  "dvstepper": {
+    "prefix": "dvstepper",
+    "body": [
+      "\"${1:fieldName}\": {",
+      "  \"name\": \"${2:fieldText}\",",
+      "  \"type\": \"stepper\",",
+      "  \"step\": ${3},",
+      "  \"min\": ${4},",
+      "  \"max\": ${5},",
+      "  \"prefix\": \"\",",
+      "  \"suffix\": \"\",",
+      "  \"precision\": 0",
+      "}"
+    ],
+    "description": "datav-stepper"
+  },
+  "dvsliderSingle": {
+    "prefix": "dvsliderSingle",
+    "body": [
+      "\"${1:fieldName}\": {",
+      "  \"name\": \"${2:fieldText}\",",
+      "  \"type\": \"slider\",",
+      "  \"mode\": \"single\",",
+      "  \"step\": ${3},",
+      "  \"min\": ${4},",
+      "  \"max\": ${5},",
+      "  \"prefix\": \"\",",
+      "  \"suffix\": \"\",",
+      "  \"precision\": 0,",
+      "  \"showCurrentRange\": true",
+      "}"
+    ],
+    "description": "datav-single-slider"
+  },
+  "dvsliderDouble": {
+    "prefix": "dvsliderDouble",
+    "body": [
+      "\"${1:fieldName}\": {",
+      "  \"name\": \"${2:fieldText}\",",
+      "  \"type\": \"slider\",",
+      "  \"mode\": \"double\",",
+      "  \"step\": ${3},",
+      "  \"min\": ${4},",
+      "  \"max\": ${5},",
+      "  \"prefix\": \"\",",
+      "  \"suffix\": \"\",",
+      "  \"precision\": 0,",
+      "  \"showRange\": false",
+      "}"
+    ],
+    "description": "datav-double-slider"
+  },
+  "dvkeyboard": {
+    "prefix": "dvkeyboard",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"keyboard\",",
+      "  \"default\": [16, 38]",
+      "}"
+    ],
+    "description": "datav-keyboard-setting"
+  },
+  "dvfill": {
+    "prefix": "dvfill",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"fill\",",
+      "  \"components\": [\"flat\", \"linearGradient\", \"image\"]",
+      "}"
+    ],
+    "description": "datav-fill"
+  },
+  "dvsuite": {
+    "prefix": "dvsuite",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"suite\",",
+      "  \"enableHide\": false,",
+      "  \"children\": {}",
+      "}"
+    ],
+    "description": "datav-suite"
+  },
+  "dvmargin": {
+    "prefix": "dvmargin",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"margin\",",
+      "  \"enableHide\": false,",
+      "  \"components\": [\"top\",\"bottom\",\"left\",\"right\"]",
+      "}"
+    ],
+    "description": "datav-margin"
+  },
+  "dvpadding": {
+    "prefix": "dvpadding",
+    "body": [
+      "\"${1:fieldName}\": {",
+      "  \"name\": \"${2:fieldText}\",",
+      "  \"type\": \"padding\",",
+      "  \"min\": ${3},",
+      "  \"max\": ${4}",
+      "}"
+    ],
+    "description": "datav-padding"
+  },
+  "dvline": {
+    "prefix": "dvline",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"line\",",
+      "  \"enableHide\": false,",
+      "  \"components\": [\"width\",\"curve\",\"style\",\"color\"]",
+      "}"
+    ],
+    "description": "datav-line"
+  },
+  "dvfont": {
+    "prefix": "dvfont",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"font\",",
+      "  \"enableHide\": false,",
+      "  \"components\": [\"fontFamily\",\"fontWeight\",\"fontSize\",\"color\"]",
+      "}"
+    ],
+    "description": "datav-font"
+  },
+  "dvgroup": {
+    "prefix": "dvgroup",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"group\",",
+      "  \"enableHide\": false,",
+      "  \"fold\": true,",
+      "  \"children\": {}",
+      "}"
+    ],
+    "description": "datav-group"
+  },
+  "dvtabs": {
+    "prefix": "dvtabs",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"tabs\",",
+      "  \"fold\": true,",
+      "  \"addable\": true,",
+      "  \"template\": {",
+      "    \"name\": \"tab<%=i+1%>\",",
+      "    \"children\": {}",
+      "  }",
+      "}"
+    ],
+    "description": "datav-tabs"
+  },
+  "dvmenu": {
+    "prefix": "dvmenu",
+    "body": [
+      "\"${fieldName}\": {",
+      "  \"name\": \"${fieldText}\",",
+      "  \"type\": \"menu\",",
+      "  \"children\": {",
+      "    \"${menu1}\": {",
+      "      \"name\": \"${菜单A}\",",
+      "      \"type\": \"single\",",
+      "      \"children\": {}",
+      "    },",
+      "    \"${menu2}\": {",
+      "      \"name\": \"${菜单B}\",",
+      "      \"type\": \"multiple\",",
+      "      \"children\": {}",
+      "    }",
+      "  }",
+      "}"
+    ],
+    "description": "datav-menu"
+  },
+  "dvshowInPanel": {
+    "prefix": "dvshowInPanel",
+    "body": [
+      "\"showInPanel\": {",
+      "  \"conditions\": [",
+      "    [\"${pathA}.${pathB}\",\"$eq\", ${true}],",
+      "    [\"${pathC}.${pathD}\", \"$eq\", ${false}]",
+      "  ],",
+      "  \"logicalType\": \"$${and}\"",
+      "}"
+    ],
+    "description": "datav-showInPanel"
+  }
+}
