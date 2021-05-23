@@ -1,9 +1,10 @@
 {
   "name": "datav-config-snippets",
   "displayName": "datav-config-snippets",
-  "description": "A tool helps to generate snippets of basic datav configs.",
+  "description": "A tool helps to generate basic datav configs snippets.",
   "version": "0.0.1",
   "license": "MIT",
+  "icon": "./assets/images/logo.png",
   "engines": {
     "vscode": "^1.56.0"
   },
