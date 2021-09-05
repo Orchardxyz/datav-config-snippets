@@ -479,7 +479,7 @@
     "body": [
       "\"showInPanel\": {",
       "  \"conditions\": [",
-      "    [\"${pathA}.${pathB}\",\"$${eq}\", ${true}],",
+      "    [\"${pathA}.${pathB}\",\"$${eq}\", ${true}]",
       "  ],",
       "  \"logicalType\": \"$${and}\"",
       "}"
