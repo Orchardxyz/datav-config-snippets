@@ -2,6 +2,9 @@
 
 All notable changes to the "datav-config-snippets" extension will be documented in this file.
 
+## 0.0.4 - 2021-09-05
+- fix: fix some bugs.
+
 ## 0.0.3 - 2021-05-29
 
 - fix: `showInPanel` config error.

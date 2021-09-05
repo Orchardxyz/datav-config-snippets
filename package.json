@@ -2,7 +2,7 @@
   "name": "datav-config-snippets",
   "displayName": "datav-config-snippets",
   "description": "A snippet extension helps generate basic datav configs snippets.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "publisher": "Orchard",
   "repository": "https://github.com/jgyyz/datav-config-snippets",
