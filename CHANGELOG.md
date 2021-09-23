@@ -2,6 +2,10 @@
 
 All notable changes to the "datav-config-snippets" extension will be documented in this file.
 
+## 0.1.0 - 2021-09-23
+- feat: add datav events snippets
+- feat: add datav public handler snippets
+
 ## 0.0.4 - 2021-09-05
 - fix: fix some bugs.
 
