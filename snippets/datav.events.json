@@ -1,0 +1,16 @@
+{
+  "dvevent": {
+    "prefix": "dvevent",
+    "body": [
+      "\"${eventName}\": {",
+      "  \"description\": \"${description}\",",
+      "  \"fields\": {",
+      "    \"${value}\": {",
+      "      \"description\": \"${valueDescription}\"",
+      "    }",
+      "  }",
+      "}"
+    ],
+    "description": "datav-event"
+  }
+}
