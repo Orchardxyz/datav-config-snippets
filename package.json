@@ -26,6 +26,10 @@
       {
         "language": "json",
         "path": "./snippets/datav.events.json"
+      },
+      {
+        "language": "json",
+        "path": "./snippets/datav.publicHandler.json"
       }
     ]
   },

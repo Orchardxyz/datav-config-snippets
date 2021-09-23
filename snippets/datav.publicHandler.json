@@ -1,0 +1,76 @@
+{
+  "dvhandler": {
+    "prefix": "dvhandler",
+    "body": [
+      "\"${name}\": {",
+      "  \"name\": \"${displayName}\",",
+      "  \"description\": \"${description}\",",
+      "  \"type\": \"${object}\",",
+      "  \"fields\": {",
+      "     ",
+      "  }",
+      "}"
+    ],
+    "description": "datav-public-handler"
+  },
+  "dvhandlernumber": {
+    "prefix": "dvhandlernumber",
+    "body": [
+      "\"${data}\": {",
+      "  \"name\": \"${displayName}\",",
+      "  \"description\": \"${description}\",",
+      "  \"type\": \"number\",",
+      "  \"default\": \"${defaultNumber}\"",
+      "}"
+    ],
+    "description": "datav-public-handler-data-number-type"
+  },
+  "dvhandlerstring": {
+    "prefix": "dvhandlerstring",
+    "body": [
+      "\"${data}\": {",
+      "  \"name\": \"${displayName}\",",
+      "  \"description\": \"${description}\",",
+      "  \"type\": \"string\",",
+      "  \"default\": \"${defaultString}\"",
+      "}"
+    ],
+    "description": "datav-public-handler-data-string-type"
+  },
+  "dvhandlerboolean": {
+    "prefix": "dvhandlerboolean",
+    "body": [
+      "\"${data}\": {",
+      "  \"name\": \"${displayName}\",",
+      "  \"description\": \"${description}\",",
+      "  \"type\": \"boolean\",",
+      "  \"default\": ${false}",
+      "}"
+    ],
+    "description": "datav-public-handler-data-boolean-type"
+  },
+  "dvhandlerobject": {
+    "prefix": "dvhandlerobject",
+    "body": [
+      "\"${data}\": {",
+      "  \"name\": \"${displayName}\",",
+      "  \"description\": \"${description}\",",
+      "  \"type\": \"object\",",
+      "  \"children\": {}",
+      "}"
+    ],
+    "description": "datav-public-handler-data-object-type"
+  },
+  "dvhandlerarray": {
+    "prefix": "dvhandlerarray",
+    "body": [
+      "\"${data}\": {",
+      "  \"name\": \"${displayName}\",",
+      "  \"description\": \"${description}\",",
+      "  \"type\": \"array\",",
+      "  \"children\": {}",
+      "}"
+    ],
+    "description": "datav-public-handler-data-array-type"
+  }
+}
